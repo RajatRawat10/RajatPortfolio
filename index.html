@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajat-Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--nav -->
+    <div id="nav">
+        <nav>
+            <div class="nav-logo">Rajat Rawat</div>
+            <div class="nav-links">
+                <a href="#hero">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="Resume/Rajat_Rawat_CV.pdf" download class="resume">Resume</a>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <!-- welcome -->
+        <div id="welcome">
+            <div class="greeting" id="greeting">Namaste</div>
+        </div>
+        <!--hero  -->
+        <div id="hero">
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Hi, I’m Rajat Rawat 👋</h1>
+                    <p>
+                        A MERN stack developer turning ideas into interactive, user-friendly web apps. Passionate about
+                        modern web technologies and building projects that make an impact.</p>
+                    <div class="hero-buttons">
+                        <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View
+                            Projects</button>
+                        <button onclick="window.location.href='Resume/Rajat_Rawat_CV.pdf'">Download Resume</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="your-image.jpg" alt="Rajat Rawat">
+                </div>
+            </section>
+        </div>
+
+        <!-- skill -->
+
+        <section id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="images/Logos/HTML Logo.png" alt="HTML Logo">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/CSS.png" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/JS Logo.png" alt="JavaScript Logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/React JS.png" alt="React Logo">
+                    <p>React.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/Tailwind.png" alt="Tailwind CSS Logo">
+                    <p>Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/Bootstrap.png" alt="Bootstrap Logo">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/Git.png" alt="Git Logo">
+                    <p>Git</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/Github.png" alt="GitHub Logo">
+                    <p>Github</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/Gsap.png" alt="GSAP Logo">
+                    <p>GSAP</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/node.png" alt="Node.js Logo">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/Express JS.png" alt="ExpressJS Logo">
+                    <p>ExpressJS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/MongoDB.png" alt="MongoDB Logo">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/Logos/Canva.png" alt="Canva Logo">
+                    <p>Canva</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- project section -->
+
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern portfolio built with HTML, CSS, JS, and GSAP animations. Responsive and interactive.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/username/portfolio" target="_blank" class="btn-source">Source
+                            Code</a>
+                        <a href="https://yourportfolio.com" target="_blank" class="btn-live">See Live</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="projects/project1.png" alt="Portfolio Website">
+                </div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>E-Commerce Website</h3>
+                    <p>Responsive e-commerce website built with React.js and Node.js, featuring a shopping cart and
+                        checkout.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/username/ecommerce" target="_blank" class="btn-source">Source
+                            Code</a>
+                        <a href="https://yourstore.com" target="_blank" class="btn-live">See Live</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="projects/project2.png" alt="E-Commerce Website">
+                </div>
+            </div>
+            <!-- Add more project rows as needed -->
+        </section>
+
+        <!-- contact section-->
+
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <form id="contact-form" autocomplete="off" class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="first_name" autocomplete="off" placeholder="First Name" required>
+                    <input type="text" name="last_name" autocomplete="off" placeholder="Last Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" autocomplete="off" placeholder="Email" required>
+                    <input type="tel" name="phone" autocomplete="off" placeholder="Phone Number" required>
+                </div>
+                <textarea name="message" rows="5" autocomplete="off" placeholder="How can I help you?"
+                    required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+            <div class="contact-socials">
+                <a href="mailto:rajatrawat4242@gmail.com" target="_blank">
+                    <img src="images/socials/gmail bw.png" alt="Gmail">
+                </a>
+                <a href="https://www.linkedin.com/in/rajat-rawat-94aa532b0/" target="_blank">
+                    <img src="images/socials/linkedin bw.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/RajatRawat10" target="_blank">
+                    <img src="images/socials/github bw.png" alt="GitHub">
+                </a>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
