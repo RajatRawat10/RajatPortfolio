@@ -36,7 +36,7 @@ const form = document.getElementById("contact-form");
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    emailjs.sendForm("rajatrawat4242@gmail.com", "template_i2nrxq6", this)
+    emailjs.sendForm("service_uunsmsw", "template_i2nrxq6", this)
         .then(() => {
             alert("✅ Message Sent Successfully!");
             form.reset();
