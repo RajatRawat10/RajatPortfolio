@@ -26,22 +26,26 @@ setInterval(() => {
 }, 1000); // Change greeting every 1 seconds
 
 
+
 // handling contact form
+const formMessage = document.getElementById("form-message");
+const form = document.getElementById("contact-form");
 (function () {
     emailjs.init("wyXJ5NTryIr5wrTWa"); //  public key
 })();
-
-const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm("service_fortherajat78123", "template_7jphqsi", this)
         .then(() => {
-            alert("✅ Message Sent Successfully!");
+              formMessage.style.color = "green";
+              formMessage.style.background = "#E0D9D9";
+      formMessage.textContent = "✅ Message sent successfully! We will get back to you soon.";
             form.reset();
         }, (error) => {
-            alert("❌ Failed to send message. Please try again.");
+            formMessage.style.color = "red";
+      formMessage.textContent = "❌ Failed to send message. Please try again.";
             console.log(error);
         });
 });
