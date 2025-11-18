@@ -18,7 +18,7 @@
                 <a href="#hero">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a href="Resume/Rajat_Rawat_CV.pdf" download class="resume">Resume</a>
+                <a href="Resume/Rajat CV Updated.pdf" download class="resume">Resume</a>
             </div>
         </nav>
     </div>
@@ -38,12 +38,12 @@
                     <div class="hero-buttons">
                         <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View
                             Projects</button>
-                        <button onclick="window.location.href='Resume/Rajat_Rawat_CV.pdf'">Download Resume</button>
+                        <button onclick="window.location.href='Resume/Rajat CV Updated.pdf'">Download Resume</button>
                     </div>
                 </div>
-                <div class="hero-image">
+                <!-- <div class="hero-image">
                     <img src="your-image.jpg" alt="Rajat Rawat">
-                </div>
+                </div> -->
             </section>
         </div>
 
@@ -66,7 +66,7 @@
                 </div>
                 <div class="skill-card">
                     <img src="images/Logos/React JS.png" alt="React Logo">
-                    <p>React.js</p>
+                    <p>ReactJS</p>
                 </div>
                 <div class="skill-card">
                     <img src="images/Logos/Tailwind.png" alt="Tailwind CSS Logo">
@@ -90,7 +90,7 @@
                 </div>
                 <div class="skill-card">
                     <img src="images/Logos/node.png" alt="Node.js Logo">
-                    <p>Node.js</p>
+                    <p>NodeJS</p>
                 </div>
                 <div class="skill-card">
                     <img src="images/Logos/Express JS.png" alt="ExpressJS Logo">
@@ -112,25 +112,82 @@
         <section id="projects">
             <h2 class="section-title">My Projects</h2>
 
+            <!-- 1. E-Commerce Website -->
             <div class="project-row">
                 <div class="project-text">
-                    <h3>Portfolio Website</h3>
-                    <p>A modern portfolio built with HTML, CSS, JS, and GSAP animations. Responsive and interactive.
-                    </p>
+                    <h3>E-Commerce Website</h3>
+                    <p>Full-featured e-commerce app with product listings, cart, and checkout. Designed for a smooth and
+                        fast shopping experience with a clean UI. Focused on usability and structured
+                        layout for easy browsing and purchasing.</p>
                     <div class="project-buttons">
-                        <a href="https://github.com/username/portfolio" target="_blank" class="btn-source">Source
+                        <a href="https://github.com/RajatRawat10/E-Commerce-React-Js" target="_blank"
+                            class="btn-source">Source Code</a>
+                        <a href="https://yourportfolio.com" target="_blank" class="btn-live">See Live</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="projects/project1.png" alt="E-Commerce Website">
+                </div>
+            </div>
+
+            <!-- 2. AI Image Enhancer – PicWish -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>AI Image Enhancer – PicWish</h3>
+                    <p>Enhance images instantly using AI technology. Upload photos and get high-quality, polished
+                        results with smooth AI-powered loading animations. Responsive design ensures a seamless user
+                        experience across devices.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/RajatRawat10/AI-Image-Enhancer" target="_blank"
+                            class="btn-source">Source Code</a>
+                        <a href="https://yourportfolio.com" target="_blank" class="btn-live">See Live</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="projects/project2.png" alt="AI Image Enhancer">
+                </div>
+            </div>
+
+            <!-- 3. Animated Website -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>Animated Website</h3>
+                    <p>Creative website with smooth scrolling and interactive animations using GSAP and Locomotive
+                        Scroll. Engaging UI/UX with fully responsive layout. Highlights skills in HTML, CSS, and
+                        JavaScript animation techniques.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/RajatRawat10/Animated-Website" target="_blank"
+                            class="btn-source">Source Code</a>
+                        <a href="https://yourportfolio.com" target="_blank" class="btn-live">See Live</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="projects/project3.png" alt="Animated Website">
+                </div>
+            </div>
+
+            <!-- 4. Weather App -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>Weather App</h3>
+                    <p>Responsive weather app that provides current weather details for any location. Displays
+                        temperature, humidity, and conditions using real-time API data. Clean and mobile-friendly design
+                        for fast and easy access to weather info.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/RajatRawat10/Weather-App" target="_blank" class="btn-source">Source
                             Code</a>
                         <a href="https://yourportfolio.com" target="_blank" class="btn-live">See Live</a>
                     </div>
                 </div>
                 <div class="project-image">
-                    <img src="projects/project1.png" alt="Portfolio Website">
+                    <img src="projects/project4.png" alt="Weather App">
                 </div>
             </div>
 
-            <div class="project-row">
+
+            <!-- <div class="project-row">
                 <div class="project-text">
-                    <h3>E-Commerce Website</h3>
+                    <h3>AI Image Enhancer</h3>
                     <p>Responsive e-commerce website built with React.js and Node.js, featuring a shopping cart and
                         checkout.</p>
                     <div class="project-buttons">
@@ -142,7 +199,7 @@
                 <div class="project-image">
                     <img src="projects/project2.png" alt="E-Commerce Website">
                 </div>
-            </div>
+            </div> -->
             <!-- Add more project rows as needed -->
         </section>
 
@@ -160,7 +217,7 @@
                     <input type="email" name="email" autocomplete="off" placeholder="Email" required>
                     <input type="tel" name="phone" autocomplete="off" placeholder="Phone Number" required>
                 </div>
-                
+
                 <textarea name="message" rows="5" autocomplete="off" placeholder="How can I help you?"
                     required></textarea>
                 <button type="submit" class="btn-submit">Send Message</button>

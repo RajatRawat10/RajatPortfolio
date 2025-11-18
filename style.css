@@ -126,8 +126,9 @@ nav {
 =========================== */
 #hero .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 100px;
     padding: 4rem 2rem;
     gap: 2rem;
     flex-wrap: wrap;
